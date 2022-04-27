@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node spec",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
@@ -42,7 +42,6 @@
     "react-apollo": "^3.1.5",
     "react-dom": "^16.14.0",
     "store-js": "^2.0.4"
-    "jasmine-node": "^1.14.5"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
