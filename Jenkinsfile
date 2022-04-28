@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:16.13.1-alpine' 
+            image 'node:lts-bullseye-slim' 
             args '-p 3000:3000' 
         }
     }
@@ -12,3 +12,4 @@ pipeline {
             }
         }
     }
+}
