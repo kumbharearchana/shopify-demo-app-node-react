@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://hub.docker.com/repositories', 'dockerhub') {
 
-        def customImage = docker.build("node-web")
+        def customImage = docker.build("nodewebapp")
 
         /* Push the container to the custom Registry */
         customImage.push()
