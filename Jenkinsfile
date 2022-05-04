@@ -1,15 +1,12 @@
-pipeline {
-    agent {
-        docker {
-            image 'node:lts-bullseye-slim' 
-            args '-p 3000:3000' 
-        }
-    }
-    stages {
-        stage('Build') { 
-            steps {
-                sh 'npm install' 
-            }
-        }
+node {
+
+    checkout scm
+
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+
+        def customImage = docker.build("nodewebapp")
+
+        /* Push the container to the custom Registry */
+        customImage.push()
     }
 }
