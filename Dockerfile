@@ -10,10 +10,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 # Installing the packages while the image is building
-RUN npm cache clean --force
+
 RUN npm install
-
-
 
 # Bundle app source, i.e. copying all your required files for the app
 
