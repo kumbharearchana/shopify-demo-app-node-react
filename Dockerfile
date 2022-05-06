@@ -25,5 +25,5 @@ EXPOSE 3000
 
 # Runtime command to be executed when the container is launched
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]
 
