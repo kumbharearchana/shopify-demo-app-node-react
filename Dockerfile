@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:13.12.0-alpine
 
 # Create app directory, where your app will live its lifetime.
 
